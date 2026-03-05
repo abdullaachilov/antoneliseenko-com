@@ -27,17 +27,26 @@
   <meta name="twitter:description" content="Лучший психиатр Москвы 2022 и 2023. Доказательная психиатрия, очно и онлайн." />
   <meta name="twitter:image" content="https://psy03.ru/img/doc/fn/anton.jpg" />
 
-  <!-- Preload critical resources -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" />
   <link rel="preload" as="image" href="https://psy03.ru/img/doc/fn/anton.jpg" />
 
-  <!-- Favicon (inline SVG as data URI) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A6B7A'/><text x='16' y='22' text-anchor='middle' font-size='18' font-family='serif' fill='white'>А</text></svg>" />
 
-  <!-- Structured data — Person / Physician -->
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function(){
+      var s=localStorage.getItem('ae_dark');
+      var d=s!==null?s==='1':window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(d)document.documentElement.dataset.theme='dark';
+    })();
+  </script>
+
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,44 +60,11 @@
     "email": "info@psy03.ru",
     "telephone": "+74952042043",
     "medicalSpecialty": "Psychiatry",
-    "availableService": [
-      {
-        "@type": "MedicalTherapy",
-        "name": "Первичная консультация психиатра",
-        "description": "Очный или онлайн первичный приём"
-      }
-    ],
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "ул. Нагатинская, 10",
-        "addressLocality": "Москва",
-        "addressCountry": "RU"
-      }
-    ],
-    "award": [
-      "ПроДокторов 2022 — 1 место, Лучший психиатр Москвы и МО",
-      "ПроДокторов 2022 — Гран-при «Искусство спасать жизни»",
-      "ПроДокторов 2023 — 1 место, Лучший психиатр Москвы и МО",
-      "ПроДокторов 2023 — Гран-при «Сияющие звёзды медицины»"
-    ],
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "МГМСУ им. А.И. Евдокимова"
-      }
-    ],
-    "sameAs": [
-      "https://psy03.ru/anton",
-      "https://t.me/psy03care"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "ratingCount": "11",
-      "reviewAspect": "verified patient reviews"
-    }
+    "address": [{"@type": "PostalAddress","streetAddress": "ул. Нагатинская, 10","addressLocality": "Москва","addressCountry": "RU"}],
+    "award": ["ПроДокторов 2022 — 1 место, Лучший психиатр Москвы и МО","ПроДокторов 2022 — Гран-при «Искусство спасать жизни»","ПроДокторов 2023 — 1 место, Лучший психиатр Москвы и МО","ПроДокторов 2023 — Гран-при «Сияющие звёзды медицины»"],
+    "alumniOf": [{"@type": "CollegeOrUniversity","name": "МГМСУ им. А.И. Евдокимова"}],
+    "sameAs": ["https://psy03.ru/anton","https://t.me/psy03care"],
+    "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","bestRating": "5","ratingCount": "11"}
   }
   </script>
 
@@ -118,6 +94,7 @@
             <button data-lang-btn="es" aria-label="Español" title="Español">ES</button>
             <button data-lang-btn="ua" aria-label="Українська" title="Українська">UA</button>
           </div>
+          <button id="dark-toggle" aria-label="Switch to dark mode" title="Dark mode">🌙</button>
           <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary nav-book-btn" data-i18n="nav_book">Записаться</a>
         </div>
         <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
@@ -156,8 +133,8 @@
             src="https://psy03.ru/img/doc/fn/anton.jpg"
             alt="Доктор Антон Михайлович Елисеенко, врач-психиатр, Москва"
             class="hero-photo"
-            width="420"
-            height="580"
+            width="400"
+            height="520"
             fetchpriority="high"
           />
           <div class="hero-rating-pill" aria-label="Рейтинг 5.0 из 5">
@@ -233,7 +210,7 @@
             <span class="section-label" data-i18n="about_section_title">Об авторе</span>
             <h2 id="about-heading" class="section-title" data-i18n="hero_name_ru">Елисеенко Антон Михайлович</h2>
             <div class="about-paragraphs">
-              <p data-i18n="about_p1">Антон Михайлович Елисеенко — московский врач-психиатр с доказательным подходом и человеческим отношением к пациентам.</p>
+              <p data-i18n="about_p1">Антон Михайлович Елисеенко — московский врач-психиатр с доказательным подходом.</p>
               <p data-i18n="about_p2">Он не уходит после приёма — сопровождает через Telegram на протяжении всего лечения.</p>
               <p data-i18n="about_p3">Автор блога «Психиатр Елисеенко», популяризатор доказательной психиатрии.</p>
             </div>
@@ -268,7 +245,7 @@
     <section id="timeline" aria-labelledby="timeline-heading">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label" data-i18n="timeline_section_title">Образование и карьера</span>
+          <span class="section-label">Timeline</span>
           <h2 id="timeline-heading" class="section-title" data-i18n="timeline_section_title">Образование и карьера</h2>
         </div>
         <div class="timeline">
@@ -433,37 +410,38 @@
             <div class="t-stars" aria-label="5 звёзд">★★★★★</div>
             <div class="t-quote-mark" aria-hidden="true">"</div>
             <blockquote class="t-text" data-i18n="t1_text">Пришла 2,5 года назад в глубокой депрессии...</blockquote>
-            <footer class="t-footer">
+            <!-- ↓ div instead of footer — fixes the dark background bug -->
+            <div class="t-footer">
               <div>
                 <div class="t-author" data-i18n="t1_author">Татьяна</div>
                 <div class="t-date" data-i18n="t1_date">Февраль 2025</div>
               </div>
               <span class="t-verified" aria-label="Подтверждённый отзыв">✓ <span data-i18n="testimonials_verified">Подтверждённый отзыв</span></span>
-            </footer>
+            </div>
           </article>
           <article class="testimonial-card fade-in" style="transition-delay:.08s">
             <div class="t-stars" aria-label="5 звёзд">★★★★★</div>
             <div class="t-quote-mark" aria-hidden="true">"</div>
             <blockquote class="t-text" data-i18n="t2_text">Антон Михайлович помогает по-настоящему жить...</blockquote>
-            <footer class="t-footer">
+            <div class="t-footer">
               <div>
                 <div class="t-author" data-i18n="t2_author">Наталья К.</div>
                 <div class="t-date" data-i18n="t2_date">Сентябрь 2024</div>
               </div>
               <span class="t-verified">✓ <span data-i18n="testimonials_verified">Подтверждённый отзыв</span></span>
-            </footer>
+            </div>
           </article>
           <article class="testimonial-card fade-in" style="transition-delay:.16s">
             <div class="t-stars" aria-label="5 звёзд">★★★★★</div>
             <div class="t-quote-mark" aria-hidden="true">"</div>
             <blockquote class="t-text" data-i18n="t3_text">Лечилась неправильно с 2007 года...</blockquote>
-            <footer class="t-footer">
+            <div class="t-footer">
               <div>
                 <div class="t-author" data-i18n="t3_author">Альфия Бонина</div>
                 <div class="t-date" data-i18n="t3_date">Август 2024</div>
               </div>
               <span class="t-verified">✓ <span data-i18n="testimonials_verified">Подтверждённый отзыв</span></span>
-            </footer>
+            </div>
           </article>
         </div>
       </div>
@@ -527,8 +505,8 @@
 
   </main>
 
-  <!-- ── Footer ─────────────────────────────────────── -->
-  <footer role="contentinfo">
+  <!-- ── Footer — has class site-footer to avoid hitting .t-footer ── -->
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-license">

@@ -1,10 +1,12 @@
 import { TRANSLATIONS, type Lang } from './translations';
 
 const LANGS: Lang[] = ['ru', 'en', 'es', 'ua'];
-const STORAGE_KEY = 'ae_lang';
+const LANG_KEY = 'ae_lang';
+const DARK_KEY = 'ae_dark';
 
+// ── Language ──────────────────────────────────────────
 function detectLang(): Lang {
-  const stored = localStorage.getItem(STORAGE_KEY) as Lang | null;
+  const stored = localStorage.getItem(LANG_KEY) as Lang | null;
   if (stored && LANGS.includes(stored)) return stored;
   const browser = navigator.language.toLowerCase();
   if (browser.startsWith('uk')) return 'ua';
@@ -15,23 +17,18 @@ function detectLang(): Lang {
 
 function applyLang(lang: Lang): void {
   document.documentElement.lang = lang === 'ua' ? 'uk' : lang;
-  localStorage.setItem(STORAGE_KEY, lang);
+  localStorage.setItem(LANG_KEY, lang);
 
-  // Update text nodes
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
-    const key = el.dataset.i18n!;
-    const map = TRANSLATIONS[key];
+    const map = TRANSLATIONS[el.dataset.i18n!];
     if (map) el.textContent = map[lang];
   });
 
-  // Update HTML content
   document.querySelectorAll<HTMLElement>('[data-i18n-html]').forEach((el) => {
-    const key = el.dataset.i18nHtml!;
-    const map = TRANSLATIONS[key];
+    const map = TRANSLATIONS[el.dataset.i18nHtml!];
     if (map) el.innerHTML = map[lang];
   });
 
-  // Update lang switcher buttons
   document.querySelectorAll<HTMLButtonElement>('[data-lang-btn]').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.langBtn === lang);
   });
@@ -43,6 +40,34 @@ function initLangSwitcher(): void {
       const lang = btn.dataset.langBtn as Lang;
       if (LANGS.includes(lang)) applyLang(lang);
     });
+  });
+}
+
+// ── Dark mode ─────────────────────────────────────────
+function applyTheme(dark: boolean): void {
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  localStorage.setItem(DARK_KEY, dark ? '1' : '0');
+  const btn = document.getElementById('dark-toggle');
+  if (btn) {
+    btn.textContent = dark ? '☀️' : '🌙';
+    btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    btn.setAttribute('title', dark ? 'Light mode' : 'Dark mode');
+  }
+}
+
+function initDarkMode(): void {
+  const stored = localStorage.getItem(DARK_KEY);
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = stored !== null ? stored === '1' : prefersDark;
+  applyTheme(isDark);
+
+  document.getElementById('dark-toggle')?.addEventListener('click', () => {
+    applyTheme(document.documentElement.dataset.theme !== 'dark');
+  });
+
+  // Sync with OS preference changes (when no stored preference)
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (localStorage.getItem(DARK_KEY) === null) applyTheme(e.matches);
   });
 }
 
@@ -66,10 +91,9 @@ function initScrollAnimations(): void {
 function initStickyNav(): void {
   const nav = document.getElementById('main-nav');
   if (!nav) return;
-  const onScroll = () => {
+  window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
+  }, { passive: true });
 }
 
 // ── Mobile menu ───────────────────────────────────────
@@ -91,10 +115,10 @@ function initMobileMenu(): void {
 
 // ── Init ──────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  initDarkMode();
   initLangSwitcher();
   initStickyNav();
   initMobileMenu();
   applyLang(detectLang());
-  // slight delay so DOM is ready
   requestAnimationFrame(() => initScrollAnimations());
 });
