@@ -63,14 +63,17 @@
     "address": [{"@type": "PostalAddress","streetAddress": "ул. Нагатинская, 10","addressLocality": "Москва","addressCountry": "RU"}],
     "award": ["ПроДокторов 2022 — 1 место, Лучший психиатр Москвы и МО","ПроДокторов 2022 — Гран-при «Искусство спасать жизни»","ПроДокторов 2023 — 1 место, Лучший психиатр Москвы и МО","ПроДокторов 2023 — Гран-при «Сияющие звёзды медицины»"],
     "alumniOf": [{"@type": "CollegeOrUniversity","name": "МГМСУ им. А.И. Евдокимова"}],
-    "sameAs": ["https://psy03.ru/anton","https://t.me/psy03care"],
-    "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","bestRating": "5","ratingCount": "11"}
+    "sameAs": ["https://psy03.ru/anton","https://t.me/psy03care","https://prodoctorov.ru/moskva/vrach/862914-eliseenko/"],
+    "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","bestRating": "5","ratingCount": "177"}
   }
   </script>
 
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
   <!-- ── Navigation ─────────────────────────────────── -->
   <nav id="main-nav" role="navigation" aria-label="Main navigation">
@@ -84,6 +87,7 @@
           <li><a href="#awards" data-i18n="nav_awards">Награды</a></li>
           <li><a href="#about" data-i18n="nav_about">Об авторе</a></li>
           <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+          <li><a href="#quiz" data-i18n="quiz_label">Самопроверка</a></li>
           <li><a href="#testimonials" data-i18n="nav_testimonials">Отзывы</a></li>
           <li><a href="#contact" data-i18n="nav_contact">Контакты</a></li>
         </ul>
@@ -117,6 +121,20 @@
           <h1 id="hero-name" class="hero-name" data-i18n="hero_name_ru">Елисеенко Антон Михайлович</h1>
           <p class="hero-subtitle" data-i18n="hero_title">Врач-психиатр · Популяризатор науки</p>
           <p class="hero-tagline" data-i18n="hero_tagline">Доказательная психиатрия. Честно, по-человечески, с заботой.</p>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-counter="177" aria-label="177 отзывов">177</span>
+              <span class="hero-stat-label">отзывов 5.0/5.0</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-counter="7" aria-label="7 лет опыта">7</span>
+              <span class="hero-stat-label">лет опыта</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-counter="4" aria-label="4 награды">4</span>
+              <span class="hero-stat-label">награды ПроДокторов</span>
+            </div>
+          </div>
           <div class="hero-ctas">
             <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero_cta">Записаться на приём</a>
             <a href="https://t.me/psy03care" target="_blank" rel="noopener" class="btn btn-ghost">Telegram</a>
@@ -153,14 +171,14 @@
       <div class="container">
         <div class="section-header fade-in">
           <span class="section-label" data-i18n="awards_section_title">Признание</span>
-          <h2 id="awards-heading" class="section-title" data-i18n="awards_section_sub">Дважды подряд — лучший психиатр Москвы</h2>
+          <h2 id="awards-heading" class="section-title" data-i18n="awards_section_sub">Дважды подряд - лучший психиатр Москвы</h2>
         </div>
         <div class="awards-grid">
           <article class="award-card fade-in" style="transition-delay:.05s">
             <div class="award-icon" aria-hidden="true">🏆</div>
             <div class="award-year">2022</div>
             <h3 class="award-title" data-i18n="award_1_title">Лучший психиатр Москвы и МО</h3>
-            <p class="award-body" data-i18n="award_1_body">ПроДокторов 2022 — 1 место</p>
+            <p class="award-body" data-i18n="award_1_body">ПроДокторов 2022 - 1 место</p>
           </article>
           <article class="award-card fade-in" style="transition-delay:.1s">
             <div class="award-icon" aria-hidden="true">🎖️</div>
@@ -172,7 +190,7 @@
             <div class="award-icon" aria-hidden="true">🏆</div>
             <div class="award-year">2023</div>
             <h3 class="award-title" data-i18n="award_3_title">Лучший психиатр Москвы и МО</h3>
-            <p class="award-body" data-i18n="award_3_body">ПроДокторов 2023 — 1 место</p>
+            <p class="award-body" data-i18n="award_3_body">ПроДокторов 2023 - 1 место</p>
           </article>
           <article class="award-card fade-in" style="transition-delay:.2s">
             <div class="award-icon" aria-hidden="true">✨</div>
@@ -245,7 +263,7 @@
     <section id="timeline" aria-labelledby="timeline-heading">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label">Timeline</span>
+          <span class="section-label" data-i18n="timeline_label">Путь</span>
           <h2 id="timeline-heading" class="section-title" data-i18n="timeline_section_title">Образование и карьера</h2>
         </div>
         <div class="timeline">
@@ -274,7 +292,7 @@
             </div>
           </div>
           <div class="tl-item fade-in">
-            <div class="tl-year">2020–2021</div>
+            <div class="tl-year">2020-2021</div>
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-body">
               <div class="tl-title" data-i18n="tl_2020_21_title">Врач-психиатр</div>
@@ -282,7 +300,7 @@
             </div>
           </div>
           <div class="tl-item fade-in">
-            <div class="tl-year">2021–2023</div>
+            <div class="tl-year">2021-2023</div>
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-body">
               <div class="tl-title" data-i18n="tl_2021_23_title">Психиатр и главный специалист</div>
@@ -290,7 +308,7 @@
             </div>
           </div>
           <div class="tl-item fade-in">
-            <div class="tl-year">2023 – <span data-i18n="tl_present">по н.в.</span></div>
+            <div class="tl-year">2023 - <span data-i18n="tl_present">наст.вр.</span></div>
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-body">
               <div class="tl-title" data-i18n="tl_2023_title">Врач-психиатр</div>
@@ -298,7 +316,7 @@
             </div>
           </div>
           <div class="tl-item fade-in">
-            <div class="tl-year">2023 – <span data-i18n="tl_present">по н.в.</span></div>
+            <div class="tl-year">2023 - <span data-i18n="tl_present">наст.вр.</span></div>
             <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-body">
               <div class="tl-title" data-i18n="tl_2023b_title">Психиатр и популяризатор науки</div>
@@ -313,7 +331,7 @@
     <section id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label" data-i18n="services_section_title">Услуги и цены</span>
+          <span class="section-label" data-i18n="nav_services">Услуги</span>
           <h2 id="services-heading" class="section-title" data-i18n="services_section_title">Услуги и цены</h2>
           <p class="section-sub" data-i18n="services_section_sub">Очный приём и онлайн-консультации</p>
         </div>
@@ -330,27 +348,27 @@
               <tr>
                 <td class="svc-name" data-i18n="svc_initial_inperson">Первичный очный приём</td>
                 <td class="svc-price">13 000 ₽</td>
-                <td class="svc-duration" data-i18n="svc_duration_45_60">45–60 мин</td>
+                <td class="svc-duration" data-i18n="svc_duration_45_60">45-60 мин</td>
               </tr>
               <tr>
                 <td class="svc-name" data-i18n="svc_followup_inperson">Повторный очный приём</td>
                 <td class="svc-price">10 000 ₽</td>
-                <td class="svc-duration" data-i18n="svc_duration_30_45">30–45 мин</td>
+                <td class="svc-duration" data-i18n="svc_duration_30_45">30-45 мин</td>
               </tr>
               <tr>
                 <td class="svc-name" data-i18n="svc_initial_online">Первичная онлайн-консультация</td>
                 <td class="svc-price">11 000 ₽</td>
-                <td class="svc-duration" data-i18n="svc_duration_45_60">45–60 мин</td>
+                <td class="svc-duration" data-i18n="svc_duration_45_60">45-60 мин</td>
               </tr>
               <tr>
                 <td class="svc-name" data-i18n="svc_followup_online">Повторная онлайн-консультация</td>
                 <td class="svc-price">9 000 ₽</td>
-                <td class="svc-duration" data-i18n="svc_duration_30_45">30–45 мин</td>
+                <td class="svc-duration" data-i18n="svc_duration_30_45">30-45 мин</td>
               </tr>
               <tr>
                 <td class="svc-name" data-i18n="svc_emergency">Экстренная / внеплановая консультация</td>
                 <td class="svc-price">15 000 ₽</td>
-                <td class="svc-duration" data-i18n="svc_duration_40_60">40–60 мин</td>
+                <td class="svc-duration" data-i18n="svc_duration_40_60">40-60 мин</td>
               </tr>
               <tr>
                 <td class="svc-name" data-i18n="svc_telegram">Telegram-сопровождение в процессе лечения</td>
@@ -360,7 +378,7 @@
             </tbody>
           </table>
         </div>
-        <p class="services-note fade-in" data-i18n="svc_note">* При необходимости длительность приёма может быть увеличена — без доплаты.</p>
+        <p class="services-note fade-in" data-i18n="svc_note">* При необходимости длительность приёма может быть увеличена - без доплаты.</p>
         <div class="services-cta fade-in">
           <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="services_book_cta">Записаться на приём</a>
         </div>
@@ -371,9 +389,9 @@
     <section id="conditions" aria-labelledby="conditions-heading">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label" data-i18n="conditions_section_title">С чем я работаю</span>
+          <span class="section-label" data-i18n="conditions_label">Специализация</span>
           <h2 id="conditions-heading" class="section-title" data-i18n="conditions_section_title">С чем я работаю</h2>
-          <p class="section-sub" data-i18n="conditions_section_sub">Если вы узнаёте себя — это повод обратиться</p>
+          <p class="section-sub" data-i18n="conditions_section_sub">Если вы узнаёте себя - это повод обратиться</p>
         </div>
         <div class="conditions-grid fade-in">
           <span class="condition-tag" data-i18n="cond_anxiety">Тревога</span>
@@ -395,6 +413,54 @@
           <span class="condition-tag" data-i18n="cond_psychosomatic">Психосоматические боли</span>
           <span class="condition-tag" data-i18n="cond_ibs">Симптомы по типу СРК</span>
         </div>
+        <div class="conditions-cta fade-in">
+          <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="conditions_cta">Записаться к психиатру</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Self-check quiz ─────────────────────────────── -->
+    <section id="quiz" aria-labelledby="quiz-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="quiz_label">Самопроверка</span>
+          <h2 id="quiz-heading" class="section-title" data-i18n="quiz_section_title">Как вы себя чувствуете?</h2>
+          <p class="section-sub" data-i18n="quiz_section_sub">5 вопросов, которые помогут понять, нужна ли вам поддержка</p>
+        </div>
+        <div class="quiz-card fade-in">
+
+          <!-- Welcome screen -->
+          <div id="quiz-welcome">
+            <div class="quiz-welcome-icon" aria-hidden="true">🧠</div>
+            <button id="quiz-start-btn" class="btn btn-primary" data-i18n="quiz_start">Пройти проверку</button>
+          </div>
+
+          <!-- Question screen -->
+          <div id="quiz-question" hidden>
+            <div id="quiz-dots" class="quiz-dots" aria-hidden="true"></div>
+            <p id="q-num" class="quiz-qnum"></p>
+            <p id="q-text" class="quiz-qtext"></p>
+            <div class="quiz-btns">
+              <button id="q-yes" class="btn btn-primary" data-i18n="quiz_yes">Да</button>
+              <button id="q-no" class="btn btn-ghost" data-i18n="quiz_no">Нет</button>
+            </div>
+          </div>
+
+          <!-- Result screen -->
+          <div id="quiz-result" hidden>
+            <div id="r-card" class="result-card">
+              <div id="r-icon" class="result-icon" aria-hidden="true"></div>
+              <h3 id="r-title" class="result-title"></h3>
+              <p id="r-text" class="result-text"></p>
+              <p id="r-disclaimer" class="result-disclaimer"></p>
+              <div class="result-ctas">
+                <a id="r-cta-book" href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="quiz_cta_book">Записаться на консультацию</a>
+                <button id="r-cta-retry" class="btn btn-ghost" data-i18n="quiz_cta_retry">Пройти ещё раз</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -402,21 +468,21 @@
     <section id="testimonials" aria-labelledby="testimonials-heading">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-label" data-i18n="testimonials_section_title">Отзывы пациентов</span>
+          <span class="section-label" data-i18n="nav_testimonials">Отзывы</span>
           <h2 id="testimonials-heading" class="section-title" data-i18n="testimonials_section_title">Отзывы пациентов</h2>
+          <p class="section-sub" data-i18n="testimonials_section_sub">Что говорят пациенты</p>
         </div>
         <div class="testimonials-grid">
           <article class="testimonial-card fade-in">
             <div class="t-stars" aria-label="5 звёзд">★★★★★</div>
             <div class="t-quote-mark" aria-hidden="true">"</div>
             <blockquote class="t-text" data-i18n="t1_text">Пришла 2,5 года назад в глубокой депрессии...</blockquote>
-            <!-- ↓ div instead of footer — fixes the dark background bug -->
             <div class="t-footer">
               <div>
                 <div class="t-author" data-i18n="t1_author">Татьяна</div>
                 <div class="t-date" data-i18n="t1_date">Февраль 2025</div>
               </div>
-              <span class="t-verified" aria-label="Подтверждённый отзыв">✓ <span data-i18n="testimonials_verified">Подтверждённый отзыв</span></span>
+              <span class="t-verified" aria-label="Подтверждённый отзыв">✓ <span data-i18n="testimonials_verified">Проверено</span></span>
             </div>
           </article>
           <article class="testimonial-card fade-in" style="transition-delay:.08s">
@@ -428,7 +494,7 @@
                 <div class="t-author" data-i18n="t2_author">Наталья К.</div>
                 <div class="t-date" data-i18n="t2_date">Сентябрь 2024</div>
               </div>
-              <span class="t-verified">✓ <span data-i18n="testimonials_verified">Подтверждённый отзыв</span></span>
+              <span class="t-verified">✓ <span data-i18n="testimonials_verified">Проверено</span></span>
             </div>
           </article>
           <article class="testimonial-card fade-in" style="transition-delay:.16s">
@@ -440,9 +506,12 @@
                 <div class="t-author" data-i18n="t3_author">Альфия Бонина</div>
                 <div class="t-date" data-i18n="t3_date">Август 2024</div>
               </div>
-              <span class="t-verified">✓ <span data-i18n="testimonials_verified">Подтверждённый отзыв</span></span>
+              <span class="t-verified">✓ <span data-i18n="testimonials_verified">Проверено</span></span>
             </div>
           </article>
+        </div>
+        <div class="testimonials-more fade-in">
+          <a href="https://prodoctorov.ru/moskva/vrach/862914-eliseenko/otzivi/" target="_blank" rel="noopener" data-i18n="testimonials_all_reviews">Все 177 отзывов на ПроДокторов</a>
         </div>
       </div>
     </section>
@@ -452,7 +521,7 @@
       <div class="container">
         <div class="contact-grid">
           <div class="fade-in">
-            <span class="section-label" data-i18n="contact_section_title">Запись и контакты</span>
+            <span class="section-label" data-i18n="nav_contact">Контакты</span>
             <h2 id="contact-heading" class="section-title" data-i18n="contact_section_title">Запись и контакты</h2>
             <div class="contact-ctas">
               <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="contact_book_cta">Записаться на приём</a>
@@ -505,7 +574,7 @@
 
   </main>
 
-  <!-- ── Footer — has class site-footer to avoid hitting .t-footer ── -->
+  <!-- ── Footer ── -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-inner">
@@ -517,6 +586,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- ── Floating CTA (appears after scrolling past hero) ── -->
+  <a id="floating-cta" href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="nav_book" aria-label="Записаться на приём">Записаться</a>
+
+  <!-- ── Breathing exercise floating button ── -->
+  <button id="breathing-btn" aria-label="Дыхательная практика" title="Дыхательная практика">🫁</button>
+
+  <!-- ── Breathing exercise modal ── -->
+  <div id="breathing-modal" role="dialog" aria-modal="true" aria-labelledby="breathing-modal-title">
+    <div class="breathing-modal-inner">
+      <button id="breathing-close" class="breathing-modal-close" aria-label="Закрыть">✕</button>
+      <h2 id="breathing-modal-title" class="breathing-modal-title" data-i18n="breathing_title">Дыхательная практика</h2>
+      <p class="breathing-modal-sub" data-i18n="breathing_sub">Коробочное дыхание 4-4-4-4 · Снимает тревогу за 2 минуты</p>
+      <div class="breathe-circle-wrap" aria-hidden="true">
+        <div id="breathe-circle" class="breathe-circle">
+          <span id="breathe-number" class="breathe-number"></span>
+        </div>
+      </div>
+      <p id="breathing-phase" class="breathing-phase" data-i18n="breathing_tip"></p>
+      <p id="breathing-cycle-display" class="breathing-cycle-display"></p>
+      <button id="breathing-start-btn" class="btn btn-primary" data-i18n="breathing_start">Начать</button>
+      <p class="breathing-tip" data-i18n="breathing_tip">Закройте глаза и следите за кругом</p>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>
