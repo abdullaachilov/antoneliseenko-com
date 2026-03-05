@@ -257,9 +257,8 @@ ul { list-style: none; }
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 64px;
-  min-height: 100svh;
-  padding-top: calc(var(--nav-h) + 48px);
-  padding-bottom: 60px;
+  padding-top: calc(var(--nav-h) + 72px);
+  padding-bottom: 80px;
 }
 .hero-content { padding: 0; }
 .hero-eyebrow {
