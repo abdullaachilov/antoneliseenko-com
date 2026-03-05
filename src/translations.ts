@@ -338,4 +338,97 @@ export const TRANSLATIONS: Record<string, Record<Lang, string>> = {
     es: '© 2025 Antón M. Eliséyenko. Todos los derechos reservados.',
     ua: '© 2025 Єлісєєнко Антон Михайлович. Усі права захищені.',
   },
+
+  /* ── TEMP PAGE ─────────────────────────────────────── */
+  temp_nav_timeline: { ru: 'Путь', en: 'Journey', es: 'Trayectoria', ua: 'Шлях' },
+  temp_metric_reviews: { ru: 'отзывов 5.0/5.0', en: 'reviews 5.0/5.0', es: 'resenas 5.0/5.0', ua: 'відгуків 5.0/5.0' },
+  temp_metric_years: { ru: 'лет опыта', en: 'years experience', es: 'anos de experiencia', ua: 'років досвіду' },
+  temp_metric_awards: { ru: 'награды ПроДокторов', en: 'ProDoctors awards', es: 'premios ProDoctors', ua: 'нагороди ПроДокторів' },
+  temp_pricing_popular: { ru: 'Популярно', en: 'Popular', es: 'Popular', ua: 'Популярно' },
+
+  /* ── MOOD CHECK-IN ──────────────────────────────────── */
+  temp_mood_label: { ru: 'Самочувствие', en: 'Check-in', es: 'Estado', ua: 'Самопочуття' },
+  temp_mood_title: { ru: 'Как вы сейчас?', en: 'How are you right now?', es: 'Como estas ahora?', ua: 'Як ви зараз?' },
+  temp_mood_sub: { ru: 'Выберите эмоцию, которая ближе всего', en: 'Choose the emotion closest to how you feel', es: 'Elige la emocion mas cercana a como te sientes', ua: 'Оберіть емоцію, яка найближча' },
+  temp_mood_great: { ru: 'Отлично', en: 'Great', es: 'Genial', ua: 'Чудово' },
+  temp_mood_okay: { ru: 'Нормально', en: 'Okay', es: 'Bien', ua: 'Нормально' },
+  temp_mood_anxious: { ru: 'Тревожно', en: 'Anxious', es: 'Ansioso', ua: 'Тривожно' },
+  temp_mood_sad: { ru: 'Грустно', en: 'Sad', es: 'Triste', ua: 'Сумно' },
+  temp_mood_empty: { ru: 'Пустота', en: 'Empty', es: 'Vacio', ua: 'Порожнеча' },
+  temp_mood_response_great: {
+    ru: 'Рад слышать! Берегите это состояние. Если что-то изменится - я всегда на связи.',
+    en: 'Glad to hear! Protect this feeling. If anything changes - I am always available.',
+    es: 'Me alegra! Protege este sentimiento. Si algo cambia, siempre estoy disponible.',
+    ua: 'Радий чути! Бережіть цей стан. Якщо щось зміниться - я завжди на зв\'язку.',
+  },
+  temp_mood_response_okay: {
+    ru: '"Нормально" - это тоже важно. Иногда стоит разобраться, почему не "отлично".',
+    en: '"Okay" matters too. Sometimes it is worth exploring why it is not "great".',
+    es: '"Bien" tambien importa. A veces vale la pena explorar por que no es "genial".',
+    ua: '"Нормально" - це теж важливо. Іноді варто розібратися, чому не "чудово".',
+  },
+  temp_mood_response_anxious: {
+    ru: 'Тревога - это сигнал, а не приговор. Попробуйте дыхательную практику или запишитесь на консультацию.',
+    en: 'Anxiety is a signal, not a sentence. Try the breathing exercise or book a consultation.',
+    es: 'La ansiedad es una senal, no una sentencia. Prueba el ejercicio de respiracion o reserva una consulta.',
+    ua: 'Тривога - це сигнал, а не вирок. Спробуйте дихальну практику або запишіться на консультацію.',
+  },
+  temp_mood_response_sad: {
+    ru: 'Грусть заслуживает внимания. Вы не одиноки - профессиональная поддержка может помочь.',
+    en: 'Sadness deserves attention. You are not alone - professional support can help.',
+    es: 'La tristeza merece atencion. No estas solo - el apoyo profesional puede ayudar.',
+    ua: 'Сум заслуговує на увагу. Ви не самотні - професійна підтримка може допомогти.',
+  },
+  temp_mood_response_empty: {
+    ru: 'Ощущение пустоты - частый симптом, с которым можно и нужно работать. Запишитесь - разберёмся вместе.',
+    en: 'Emptiness is a common symptom that can and should be addressed. Book a consultation - we will figure it out together.',
+    es: 'El vacio es un sintoma comun que puede y debe abordarse. Reserva una consulta.',
+    ua: 'Відчуття порожнечі - частий симптом, з яким можна і треба працювати. Запишіться - розберемося разом.',
+  },
+
+  /* ── AFFIRMATION ────────────────────────────────────── */
+  temp_affirmation_label: { ru: 'Мысль дня', en: 'Daily thought', es: 'Pensamiento del dia', ua: 'Думка дня' },
+  temp_affirmation_refresh: { ru: 'Другая', en: 'Another', es: 'Otra', ua: 'Інша' },
+  temp_affirmation_1: {
+    ru: 'Просить о помощи - это не слабость, а мудрость.',
+    en: 'Asking for help is not weakness - it is wisdom.',
+    es: 'Pedir ayuda no es debilidad, es sabiduria.',
+    ua: 'Просити про допомогу - це не слабкість, а мудрість.',
+  },
+  temp_affirmation_2: {
+    ru: 'Вы заслуживаете чувствовать себя лучше.',
+    en: 'You deserve to feel better.',
+    es: 'Mereces sentirte mejor.',
+    ua: 'Ви заслуговуєте почуватися краще.',
+  },
+  temp_affirmation_3: {
+    ru: 'Ваши чувства имеют значение.',
+    en: 'Your feelings matter.',
+    es: 'Tus sentimientos importan.',
+    ua: 'Ваші почуття мають значення.',
+  },
+  temp_affirmation_4: {
+    ru: 'Маленький шаг - это тоже шаг вперёд.',
+    en: 'A small step is still a step forward.',
+    es: 'Un pequeno paso sigue siendo un paso adelante.',
+    ua: 'Маленький крок - це теж крок вперед.',
+  },
+  temp_affirmation_5: {
+    ru: 'Сегодня - хороший день, чтобы позаботиться о себе.',
+    en: 'Today is a good day to take care of yourself.',
+    es: 'Hoy es un buen dia para cuidarte.',
+    ua: 'Сьогодні - гарний день, щоб подбати про себе.',
+  },
+  temp_affirmation_6: {
+    ru: 'Вы сильнее, чем думаете.',
+    en: 'You are stronger than you think.',
+    es: 'Eres mas fuerte de lo que piensas.',
+    ua: 'Ви сильніші, ніж думаєте.',
+  },
+  temp_affirmation_7: {
+    ru: 'Изменения начинаются с решения.',
+    en: 'Change begins with a decision.',
+    es: 'El cambio comienza con una decision.',
+    ua: 'Зміни починаються з рішення.',
+  },
 };

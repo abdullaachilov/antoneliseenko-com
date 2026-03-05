@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Елисеенко Антон Михайлович - Врач-психиатр, Москва</title>
+  <meta name="description" content="Психиатр Елисеенко Антон Михайлович - доказательная психиатрия в Москве и онлайн." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="preload" as="image" href="https://psy03.ru/img/doc/fn/anton.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A6B7A'/><text x='16' y='22' text-anchor='middle' font-size='18' font-family='serif' fill='white'>A</text></svg>" />
+
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function(){
+      var s=localStorage.getItem('ae_dark');
+      var d=s!==null?s==='1':window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(d)document.documentElement.dataset.theme='dark';
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/src/temp.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Home">
+          <span class="nav-logo-mark">AE</span>
+          <span class="nav-logo-text">Dr. Eliseyenko</span>
+        </a>
+        <ul id="nav-menu" role="list">
+          <li><a href="#awards" data-i18n="nav_awards">Awards</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#timeline" data-i18n="temp_nav_timeline">Journey</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#conditions" data-i18n="conditions_label">Conditions</a></li>
+          <li><a href="#testimonials" data-i18n="nav_testimonials">Reviews</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="lang-switcher" role="group" aria-label="Language selector">
+            <button data-lang-btn="ru" aria-label="Русский" title="Русский">RU</button>
+            <button data-lang-btn="en" aria-label="English" title="English">EN</button>
+            <button data-lang-btn="es" aria-label="Espanol" title="Espanol">ES</button>
+            <button data-lang-btn="ua" aria-label="Ukrainska" title="Ukrainska">UA</button>
+          </div>
+          <button id="dark-toggle" aria-label="Switch to dark mode" title="Dark mode">
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary nav-book-btn" data-i18n="nav_book">Book</a>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" aria-labelledby="hero-name">
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="hero-particles" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-pill">
+              <span class="hero-pulse" aria-hidden="true"></span>
+              ProDoctors #1 Moscow - 2022 & 2023
+            </span>
+          </div>
+          <h1 id="hero-name" class="hero-name" data-i18n="hero_name_ru">Елисеенко Антон Михайлович</h1>
+          <p class="hero-subtitle" data-i18n="hero_title">Врач-психиатр - Популяризатор науки</p>
+          <p class="hero-tagline" data-i18n="hero_tagline">Доказательная психиатрия. Честно, по-человечески, с заботой.</p>
+          <div class="hero-metrics">
+            <div class="hero-metric glass-card">
+              <span class="hero-metric-num" data-counter="177">177</span>
+              <span class="hero-metric-label" data-i18n="temp_metric_reviews">reviews 5.0/5.0</span>
+            </div>
+            <div class="hero-metric glass-card">
+              <span class="hero-metric-num" data-counter="7">7</span>
+              <span class="hero-metric-label" data-i18n="temp_metric_years">years experience</span>
+            </div>
+            <div class="hero-metric glass-card">
+              <span class="hero-metric-num" data-counter="4">4</span>
+              <span class="hero-metric-label" data-i18n="temp_metric_awards">ProDoctors awards</span>
+            </div>
+          </div>
+          <div class="hero-ctas">
+            <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary btn-glow" data-i18n="hero_cta">Записаться на приём</a>
+            <a href="https://t.me/psy03care" target="_blank" rel="noopener" class="btn btn-glass">Telegram</a>
+          </div>
+        </div>
+        <div class="hero-photo-col fade-in" style="transition-delay:.15s">
+          <div class="hero-photo-ring" aria-hidden="true"></div>
+          <img
+            src="https://psy03.ru/img/doc/fn/anton.jpg"
+            alt="Dr. Anton Eliseyenko, psychiatrist"
+            class="hero-photo"
+            width="400"
+            height="520"
+            fetchpriority="high"
+          />
+          <div class="hero-float-card glass-card">
+            <div class="hero-float-stars" aria-hidden="true">★★★★★</div>
+            <div class="hero-float-score">5.0 / 5.0</div>
+            <div class="hero-float-sub" data-i18n="hero_rating">5.0 / 5.0 по отзывам пациентов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards (Bento Grid) -->
+    <section id="awards" aria-labelledby="awards-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="awards_section_title">Recognition</span>
+          <h2 id="awards-heading" class="section-title" data-i18n="awards_section_sub">Дважды подряд - лучший психиатр Москвы</h2>
+        </div>
+        <div class="bento-grid">
+          <article class="bento-card bento-lg fade-in" style="transition-delay:.05s">
+            <div class="bento-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5 2-1 2 1-2-5z"/><path d="M8 9a4 4 0 118 0 4 4 0 01-8 0z"/><path d="M12 2v1M4.22 4.22l.71.71M1 12h1M4.22 19.78l.71-.71M12 21v1M19.78 19.78l-.71-.71M23 12h-1M19.78 4.22l-.71.71"/></svg>
+            </div>
+            <div class="bento-year">2022</div>
+            <h3 class="bento-title" data-i18n="award_1_title">Лучший психиатр Москвы и МО</h3>
+            <p class="bento-body" data-i18n="award_1_body">ПроДокторов 2022 - 1 место</p>
+          </article>
+          <article class="bento-card fade-in" style="transition-delay:.1s">
+            <div class="bento-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="bento-year">2022</div>
+            <h3 class="bento-title" data-i18n="award_2_title">Гран-при «Искусство спасать жизни»</h3>
+            <p class="bento-body" data-i18n="award_2_body">ПроДокторов 2022</p>
+          </article>
+          <article class="bento-card fade-in" style="transition-delay:.15s">
+            <div class="bento-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="bento-year">2023</div>
+            <h3 class="bento-title" data-i18n="award_3_title">Лучший психиатр Москвы и МО</h3>
+            <p class="bento-body" data-i18n="award_3_body">ПроДокторов 2023 - 1 место</p>
+          </article>
+          <article class="bento-card bento-lg fade-in" style="transition-delay:.2s">
+            <div class="bento-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5 2-1 2 1-2-5z"/><path d="M8 9a4 4 0 118 0 4 4 0 01-8 0z"/><path d="M12 2v1M4.22 4.22l.71.71M1 12h1M4.22 19.78l.71-.71M12 21v1M19.78 19.78l-.71-.71M23 12h-1M19.78 4.22l-.71.71"/></svg>
+            </div>
+            <div class="bento-year">2023</div>
+            <h3 class="bento-title" data-i18n="award_4_title">Гран-при «Сияющие звёзды медицины»</h3>
+            <p class="bento-body" data-i18n="award_4_body">ПроДокторов 2023</p>
+          </article>
+        </div>
+        <div class="awards-score-bar glass-card fade-in">
+          <div class="awards-score-num">5.0</div>
+          <div class="awards-score-detail">
+            <div class="awards-score-stars" aria-hidden="true">★★★★★</div>
+            <div class="awards-score-label" data-i18n="hero_rating">5.0 / 5.0 по отзывам пациентов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About (Asymmetric) -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-photo-col fade-in">
+            <div class="about-photo-frame">
+              <img
+                src="https://psy03.ru/img/doc/fn/anton.jpg"
+                alt="Антон Елисеенко - врач-психиатр"
+                class="about-photo"
+                loading="lazy"
+                width="400"
+                height="500"
+              />
+              <div class="about-photo-accent" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="about-text-col fade-in" style="transition-delay:.12s">
+            <span class="section-label" data-i18n="about_section_title">About</span>
+            <h2 id="about-heading" class="section-title" data-i18n="hero_name_ru">Елисеенко Антон Михайлович</h2>
+            <div class="about-paragraphs">
+              <p data-i18n="about_p1">Антон Михайлович Елисеенко - московский врач-психиатр с доказательным подходом.</p>
+              <p data-i18n="about_p2">Он не уходит после приёма - сопровождает через Telegram на протяжении всего лечения.</p>
+              <p data-i18n="about_p3">Автор блога «Психиатр Елисеенко», популяризатор доказательной психиатрии.</p>
+            </div>
+            <div class="about-values-grid">
+              <div class="about-value glass-card">
+                <svg class="about-value-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                <div class="about-value-title" data-i18n="about_value1_title">Доказательная база</div>
+                <div class="about-value-text" data-i18n="about_value1_text">Только методы с доказанной эффективностью</div>
+              </div>
+              <div class="about-value glass-card">
+                <svg class="about-value-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                <div class="about-value-title" data-i18n="about_value2_title">Конфиденциально</div>
+                <div class="about-value-text" data-i18n="about_value2_text">Без постановки на учёт и огласки</div>
+              </div>
+              <div class="about-value glass-card">
+                <svg class="about-value-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                <div class="about-value-title" data-i18n="about_value3_title">Всегда рядом</div>
+                <div class="about-value-text" data-i18n="about_value3_text">Telegram-сопровождение на всём пути лечения</div>
+              </div>
+              <div class="about-value glass-card">
+                <svg class="about-value-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <div class="about-value-title" data-i18n="about_value4_title">Честно</div>
+                <div class="about-value-text" data-i18n="about_value4_text">Правильный диагноз, а не удобный</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline (Horizontal) -->
+    <section id="timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="timeline_label">Journey</span>
+          <h2 id="timeline-heading" class="section-title" data-i18n="timeline_section_title">Образование и карьера</h2>
+        </div>
+      </div>
+      <div class="timeline-scroll-wrap">
+        <div class="timeline-track" id="timeline-track">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <div class="tl-card glass-card fade-in">
+            <div class="tl-year">2017</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-title" data-i18n="tl_2017_title">Высшее медицинское образование</div>
+            <div class="tl-text" data-i18n="tl_2017_body">МГМСУ им. А.И. Евдокимова</div>
+          </div>
+          <div class="tl-card glass-card fade-in">
+            <div class="tl-year">2020</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-title" data-i18n="tl_2020_title">Ординатура по психиатрии</div>
+            <div class="tl-text" data-i18n="tl_2020_body">МГМСУ им. А.И. Евдокимова</div>
+          </div>
+          <div class="tl-card glass-card fade-in">
+            <div class="tl-year">2020-21</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-title" data-i18n="tl_2020_21_title">Врач-психиатр</div>
+            <div class="tl-text" data-i18n="tl_2020_21_body">ПНД №10, Москва</div>
+          </div>
+          <div class="tl-card glass-card fade-in">
+            <div class="tl-year">2021-23</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-title" data-i18n="tl_2021_23_title">Психиатр и главный специалист</div>
+            <div class="tl-text" data-i18n="tl_2021_23_body">МЦ «Эмпатия», Москва</div>
+          </div>
+          <div class="tl-card glass-card fade-in">
+            <div class="tl-year">2023+</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-title" data-i18n="tl_2023_title">Врач-психиатр</div>
+            <div class="tl-text" data-i18n="tl_2023_body">«Клиника на Нагатинской»</div>
+          </div>
+          <div class="tl-card glass-card fade-in">
+            <div class="tl-year">2023+</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-title" data-i18n="tl_2023b_title">Психиатр и популяризатор науки</div>
+            <div class="tl-text" data-i18n="tl_2023b_body">psy03.ru</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services (Cards) -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="nav_services">Services</span>
+          <h2 id="services-heading" class="section-title" data-i18n="services_section_title">Услуги и цены</h2>
+          <p class="section-sub" data-i18n="services_section_sub">Очный приём и онлайн-консультации</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card glass-card fade-in">
+            <div class="pricing-badge" data-i18n="temp_pricing_popular">Popular</div>
+            <h3 class="pricing-name" data-i18n="svc_initial_inperson">Первичный очный приём</h3>
+            <div class="pricing-price">13 000 &#8381;</div>
+            <div class="pricing-duration" data-i18n="svc_duration_45_60">45-60 мин</div>
+            <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero_cta">Записаться</a>
+          </div>
+          <div class="pricing-card glass-card fade-in" style="transition-delay:.06s">
+            <h3 class="pricing-name" data-i18n="svc_followup_inperson">Повторный очный приём</h3>
+            <div class="pricing-price">10 000 &#8381;</div>
+            <div class="pricing-duration" data-i18n="svc_duration_30_45">30-45 мин</div>
+            <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-glass" data-i18n="hero_cta">Записаться</a>
+          </div>
+          <div class="pricing-card glass-card fade-in" style="transition-delay:.12s">
+            <h3 class="pricing-name" data-i18n="svc_initial_online">Первичная онлайн-консультация</h3>
+            <div class="pricing-price">11 000 &#8381;</div>
+            <div class="pricing-duration" data-i18n="svc_duration_45_60">45-60 мин</div>
+            <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-glass" data-i18n="hero_cta">Записаться</a>
+          </div>
+          <div class="pricing-card glass-card fade-in" style="transition-delay:.18s">
+            <h3 class="pricing-name" data-i18n="svc_followup_online">Повторная онлайн-консультация</h3>
+            <div class="pricing-price">9 000 &#8381;</div>
+            <div class="pricing-duration" data-i18n="svc_duration_30_45">30-45 мин</div>
+            <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-glass" data-i18n="hero_cta">Записаться</a>
+          </div>
+          <div class="pricing-card glass-card fade-in" style="transition-delay:.24s">
+            <h3 class="pricing-name" data-i18n="svc_emergency">Экстренная консультация</h3>
+            <div class="pricing-price">15 000 &#8381;</div>
+            <div class="pricing-duration" data-i18n="svc_duration_40_60">40-60 мин</div>
+            <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-glass" data-i18n="hero_cta">Записаться</a>
+          </div>
+          <div class="pricing-card glass-card pricing-free fade-in" style="transition-delay:.3s">
+            <h3 class="pricing-name" data-i18n="svc_telegram">Telegram-сопровождение</h3>
+            <div class="pricing-price pricing-price-free" data-i18n="svc_price_free">Бесплатно</div>
+            <div class="pricing-duration" data-i18n="svc_duration_ongoing">Весь период лечения</div>
+            <a href="https://t.me/psy03care" target="_blank" rel="noopener" class="btn btn-glass">Telegram</a>
+          </div>
+        </div>
+        <p class="services-note fade-in" data-i18n="svc_note">* При необходимости длительность приёма может быть увеличена - без доплаты.</p>
+      </div>
+    </section>
+
+    <!-- Conditions (Tag Cloud) -->
+    <section id="conditions" aria-labelledby="conditions-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="conditions_label">Specialization</span>
+          <h2 id="conditions-heading" class="section-title" data-i18n="conditions_section_title">С чем я работаю</h2>
+          <p class="section-sub" data-i18n="conditions_section_sub">Если вы узнаёте себя - это повод обратиться</p>
+        </div>
+        <div class="tag-cloud fade-in">
+          <span class="tag tag-lg" data-i18n="cond_anxiety">Тревога</span>
+          <span class="tag" data-i18n="cond_depression">Депрессия</span>
+          <span class="tag tag-sm" data-i18n="cond_apathy">Апатия</span>
+          <span class="tag tag-lg" data-i18n="cond_fatigue">Хроническая усталость</span>
+          <span class="tag" data-i18n="cond_irritability">Раздражительность</span>
+          <span class="tag tag-lg" data-i18n="cond_ocd">Навязчивые мысли (ОКР)</span>
+          <span class="tag tag-sm" data-i18n="cond_mood">Перепады настроения</span>
+          <span class="tag" data-i18n="cond_panic">Панические атаки</span>
+          <span class="tag tag-sm" data-i18n="cond_emptiness">Ощущение пустоты</span>
+          <span class="tag" data-i18n="cond_anhedonia">Ангедония</span>
+          <span class="tag tag-sm" data-i18n="cond_memory">Нарушения памяти</span>
+          <span class="tag" data-i18n="cond_despair">Отчаяние</span>
+          <span class="tag tag-lg" data-i18n="cond_dissociation">Диссоциация</span>
+          <span class="tag" data-i18n="cond_sleep">Расстройства сна</span>
+          <span class="tag tag-sm" data-i18n="cond_appetite">Нарушения аппетита</span>
+          <span class="tag" data-i18n="cond_libido">Снижение либидо</span>
+          <span class="tag tag-lg" data-i18n="cond_psychosomatic">Психосоматические боли</span>
+          <span class="tag" data-i18n="cond_ibs">Симптомы по типу СРК</span>
+        </div>
+        <div class="conditions-cta fade-in">
+          <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary btn-glow" data-i18n="conditions_cta">Записаться к психиатру</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Self-check quiz -->
+    <section id="quiz" aria-labelledby="quiz-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="quiz_label">Self-check</span>
+          <h2 id="quiz-heading" class="section-title" data-i18n="quiz_section_title">Как вы себя чувствуете?</h2>
+          <p class="section-sub" data-i18n="quiz_section_sub">5 вопросов</p>
+        </div>
+        <div class="quiz-card glass-card fade-in">
+          <div id="quiz-welcome">
+            <div class="quiz-welcome-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="9" r="1" fill="currentColor"/></svg>
+            </div>
+            <button id="quiz-start-btn" class="btn btn-primary" data-i18n="quiz_start">Пройти проверку</button>
+          </div>
+          <div id="quiz-question" hidden>
+            <div id="quiz-dots" class="quiz-dots" aria-hidden="true"></div>
+            <p id="q-num" class="quiz-qnum"></p>
+            <p id="q-text" class="quiz-qtext"></p>
+            <div class="quiz-btns">
+              <button id="q-yes" class="btn btn-primary" data-i18n="quiz_yes">Да</button>
+              <button id="q-no" class="btn btn-glass" data-i18n="quiz_no">Нет</button>
+            </div>
+          </div>
+          <div id="quiz-result" hidden>
+            <div id="r-card" class="result-card">
+              <div id="r-icon" class="result-icon" aria-hidden="true"></div>
+              <h3 id="r-title" class="result-title"></h3>
+              <p id="r-text" class="result-text"></p>
+              <p id="r-disclaimer" class="result-disclaimer"></p>
+              <div class="result-ctas">
+                <a id="r-cta-book" href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="quiz_cta_book">Записаться</a>
+                <button id="r-cta-retry" class="btn btn-glass" data-i18n="quiz_cta_retry">Ещё раз</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mood Check-in -->
+    <section id="mood" aria-labelledby="mood-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="temp_mood_label">Check-in</span>
+          <h2 id="mood-heading" class="section-title" data-i18n="temp_mood_title">Как вы сейчас?</h2>
+          <p class="section-sub" data-i18n="temp_mood_sub">Выберите эмоцию, которая ближе всего</p>
+        </div>
+        <div class="mood-grid fade-in" id="mood-grid">
+          <button class="mood-btn glass-card" data-mood="great">
+            <span class="mood-emoji" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="9" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="mood-label" data-i18n="temp_mood_great">Отлично</span>
+          </button>
+          <button class="mood-btn glass-card" data-mood="okay">
+            <span class="mood-emoji" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="8" y1="15" x2="16" y2="15"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="9" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="mood-label" data-i18n="temp_mood_okay">Нормально</span>
+          </button>
+          <button class="mood-btn glass-card" data-mood="anxious">
+            <span class="mood-emoji" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="9" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="mood-label" data-i18n="temp_mood_anxious">Тревожно</span>
+          </button>
+          <button class="mood-btn glass-card" data-mood="sad">
+            <span class="mood-emoji" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><path d="M9 9h.01M15 9h.01"/></svg>
+            </span>
+            <span class="mood-label" data-i18n="temp_mood_sad">Грустно</span>
+          </button>
+          <button class="mood-btn glass-card" data-mood="empty">
+            <span class="mood-emoji" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="8" y1="15" x2="16" y2="15"/><path d="M9 9h.01M15 9h.01"/></svg>
+            </span>
+            <span class="mood-label" data-i18n="temp_mood_empty">Пустота</span>
+          </button>
+        </div>
+        <div id="mood-response" class="mood-response glass-card fade-in" hidden>
+          <p id="mood-response-text"></p>
+          <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-i18n="hero_cta">Записаться</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Affirmation -->
+    <section id="affirmation" aria-labelledby="affirmation-heading">
+      <div class="container">
+        <div class="affirmation-card glass-card fade-in">
+          <span class="section-label" data-i18n="temp_affirmation_label">Daily Thought</span>
+          <h2 id="affirmation-heading" class="affirmation-text"></h2>
+          <button id="affirmation-refresh" class="btn btn-glass btn-sm" data-i18n="temp_affirmation_refresh">Another</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (Carousel) -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="nav_testimonials">Reviews</span>
+          <h2 id="testimonials-heading" class="section-title" data-i18n="testimonials_section_title">Отзывы пациентов</h2>
+          <p class="section-sub" data-i18n="testimonials_section_sub">Что говорят пациенты</p>
+        </div>
+        <div class="carousel-wrap fade-in">
+          <div class="carousel" id="carousel">
+            <article class="carousel-card glass-card">
+              <div class="t-stars" aria-hidden="true">★★★★★</div>
+              <blockquote class="t-text" data-i18n="t1_text">Пришла 2,5 года назад в глубокой депрессии...</blockquote>
+              <div class="t-footer">
+                <div>
+                  <div class="t-author" data-i18n="t1_author">Татьяна</div>
+                  <div class="t-date" data-i18n="t1_date">Февраль 2025</div>
+                </div>
+                <span class="t-verified">&#10003; <span data-i18n="testimonials_verified">Проверено</span></span>
+              </div>
+            </article>
+            <article class="carousel-card glass-card">
+              <div class="t-stars" aria-hidden="true">★★★★★</div>
+              <blockquote class="t-text" data-i18n="t2_text">Антон Михайлович помогает по-настоящему жить...</blockquote>
+              <div class="t-footer">
+                <div>
+                  <div class="t-author" data-i18n="t2_author">Наталья К.</div>
+                  <div class="t-date" data-i18n="t2_date">Сентябрь 2024</div>
+                </div>
+                <span class="t-verified">&#10003; <span data-i18n="testimonials_verified">Проверено</span></span>
+              </div>
+            </article>
+            <article class="carousel-card glass-card">
+              <div class="t-stars" aria-hidden="true">★★★★★</div>
+              <blockquote class="t-text" data-i18n="t3_text">Лечилась неправильно с 2007 года...</blockquote>
+              <div class="t-footer">
+                <div>
+                  <div class="t-author" data-i18n="t3_author">Альфия Бонина</div>
+                  <div class="t-date" data-i18n="t3_date">Август 2024</div>
+                </div>
+                <span class="t-verified">&#10003; <span data-i18n="testimonials_verified">Проверено</span></span>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-nav">
+            <button id="carousel-prev" class="carousel-btn" aria-label="Previous">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button id="carousel-next" class="carousel-btn" aria-label="Next">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="testimonials-more fade-in">
+          <a href="https://prodoctorov.ru/moskva/vrach/862914-eliseenko/otzivi/" target="_blank" rel="noopener" data-i18n="testimonials_all_reviews">Все 177 отзывов на ПроДокторов</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (Glass) -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-left fade-in">
+            <span class="section-label" data-i18n="nav_contact">Contact</span>
+            <h2 id="contact-heading" class="section-title" data-i18n="contact_section_title">Запись и контакты</h2>
+            <div class="contact-ctas">
+              <a href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary btn-glow btn-lg" data-i18n="contact_book_cta">Записаться на приём</a>
+              <a href="https://t.me/psy03care" target="_blank" rel="noopener" class="btn btn-glass btn-lg" data-i18n="contact_telegram_cta">Написать в Telegram</a>
+            </div>
+          </div>
+          <div class="contact-right fade-in" style="transition-delay:.1s">
+            <div class="contact-cards">
+              <div class="contact-card glass-card">
+                <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <div class="contact-card-label" data-i18n="contact_locations_title">Адреса приёма</div>
+                  <div class="contact-card-text" data-i18n="contact_loc1">ул. Нагатинская, 10</div>
+                  <div class="contact-card-sub" data-i18n="contact_loc2">1-й Нагатинский проезд, 14</div>
+                </div>
+              </div>
+              <div class="contact-card glass-card">
+                <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                <div>
+                  <div class="contact-card-label" data-i18n="contact_online_title">Онлайн по всему миру</div>
+                  <div class="contact-card-text"><a href="https://psy03.ru/booking" target="_blank" rel="noopener">psy03.ru/booking</a></div>
+                </div>
+              </div>
+              <div class="contact-card glass-card">
+                <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                <div>
+                  <div class="contact-card-label">Телефон</div>
+                  <div class="contact-card-text"><a href="tel:+74952042043">+7 (495) 204-20-43</a></div>
+                </div>
+              </div>
+              <div class="contact-card glass-card">
+                <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                  <div class="contact-card-label">Email</div>
+                  <div class="contact-card-text"><a href="mailto:info@psy03.ru">info@psy03.ru</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo-mark">AE</span>
+          <span>Dr. Anton Eliseyenko</span>
+        </div>
+        <div class="footer-license">
+          <span data-i18n="footer_license">Лицензия:</span>
+          <span data-i18n="footer_license_num">Л041-01137-77/00344040 от 31.01.2019</span>
+        </div>
+        <div data-i18n="footer_rights">&copy; 2025 Елисеенко Антон Михайлович</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a id="floating-cta" href="https://psy03.ru/booking" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="nav_book" aria-label="Book">Записаться</a>
+
+  <!-- Breathing button -->
+  <button id="breathing-btn" aria-label="Breathing exercise" title="Breathing exercise">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/></svg>
+  </button>
+
+  <!-- Breathing modal -->
+  <div id="breathing-modal" role="dialog" aria-modal="true" aria-labelledby="breathing-modal-title">
+    <div class="breathing-modal-inner glass-card">
+      <button id="breathing-close" class="breathing-modal-close" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 id="breathing-modal-title" class="breathing-modal-title" data-i18n="breathing_title">Дыхательная практика</h2>
+      <p class="breathing-modal-sub" data-i18n="breathing_sub">Коробочное дыхание 4-4-4-4</p>
+      <div class="breathe-circle-wrap" aria-hidden="true">
+        <div id="breathe-circle" class="breathe-circle">
+          <span id="breathe-number" class="breathe-number"></span>
+        </div>
+      </div>
+      <p id="breathing-phase" class="breathing-phase" data-i18n="breathing_tip"></p>
+      <p id="breathing-cycle-display" class="breathing-cycle-display"></p>
+      <button id="breathing-start-btn" class="btn btn-primary" data-i18n="breathing_start">Начать</button>
+      <p class="breathing-tip" data-i18n="breathing_tip">Закройте глаза и следите за кругом</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/temp.ts"></script>
+</body>
+</html>
